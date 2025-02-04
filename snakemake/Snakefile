@@ -189,7 +189,7 @@ else:  # concat mode
             R1_trimmed=os.path.join(output_dir, "trimmed_data/{sample}_R1_trimmed.fastq"),
             R2_trimmed=os.path.join(output_dir, "trimmed_data/{sample}_R2_trimmed.fastq"),
             report=os.path.join(output_dir, "trimmed_data/reports/{sample}_fastp_report.html"),
-            json=os.path.join(output_dir, "trimmed_data/resports/{sample}_fastp_report.json")
+            json=os.path.join(output_dir, "trimmed_data/reports/{sample}_fastp_report.json")
         log:
             out=os.path.join(output_dir, "trimmed_data/{sample}_fastp.out"),
             err=os.path.join(output_dir, "trimmed_data/{sample}_fastp.err")
